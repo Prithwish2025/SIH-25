@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mona sans", sans-serif;
+    color: white;
+}
+.navbar{
+    height: 60px;
+    background-color: #080f25;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.web-name{
+    margin-left: 20px;
+    width: 70%;
+    font-size: 1.2rem;
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.navbar-login{
+    height: 36px;
+    width: 94px;
+    background-color: #7071ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.navbar-login:hover{
+    border: white 2px solid;
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    transform: scale(1.05);
+}
+
+/* hero-section */
+
+.hero-section{
+    height: 500px;
+    width: 100%;
+    background-color: #151786;
+}
+.about-us{
+    height: 300px;
+    width: 100%;
+    background-color: #0a0f4d;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+/* footer */
+.footer-content{
+    height: 250px;
+    width: 100%;
+    background-color: #080f25;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    padding-top: 20px;;
+}
+ul a{
+    text-decoration: none;
+    display: block;
+    margin: 15px;
+}
+ul p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form textarea{
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    color: black;
+    font-family: "Mona sans", sans-serif;
+}
+form button{
+    margin-top: 10px;
+    height: 25px;
+    width: 80px;
+    border: none;
+    background-color: #7071ec;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+form button:hover{
+    border: white 2px solid;
+    box-shadow: 0 0 10px white;
+    transform: scale(1.05);
+}
+.footer-bottom{
+    height: 50px;
+    width: 100%;
+    background-color: #021526;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

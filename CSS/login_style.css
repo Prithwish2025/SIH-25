@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0f4d;
+}
+.login-form{
+    height: 300px;
+    width: 600px;
+    background-color: #151786;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px rgb(222, 126, 229);
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 30px rgb(222, 126, 229);
+    }
+    100% {
+        box-shadow: 0 0 70px rgb(225, 113, 233);
+    }
+}
+.form{
+    margin: 20px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.username input, .password input{
+    height: 20px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+    color: black;
+    font-family: "Mona sans", sans-serif;
+    font-size: 1rem;
+}
+.username input:focus, .password input:focus{
+    border: 2px solid rgb(222, 126, 229);
+    animation: border-rotate 1.5s infinite linear;
+}
+@keyframes border-rotate {
+    0% {
+        box-shadow: 0 0 10px 2px #de7ee5, 0 0 0 0 #e171e9, 0 0 0 0 #fff;
+    }
+    33% {
+        box-shadow: 0 0 0 0 #de7ee5, 0 0 10px 2px #e171e9, 0 0 0 0 #fff;
+    }
+    66% {
+        box-shadow: 0 0 0 0 #de7ee5, 0 0 0 0 #e171e9, 0 0 10px 2px #fff;
+    }
+    100% {
+        box-shadow: 0 0 10px 2px #de7ee5, 0 0 0 0 #e171e9, 0 0 0 0 #fff;
+    }
+}
+.username label, .password label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.submit button{
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #7071ec;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.submit button:hover{
+    border: white 2px solid;
+    box-shadow: 0 0 15px white;
+    transform: scale(1.05);
+}
