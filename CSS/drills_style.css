@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Mona sans', sans-serif;
+}
+.drills-section{
+    width: 100%;
+    background-color: #0a0f4d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box{
+    min-height: 150px;
+    width: 30%;
+    background-color: #151786;
+    padding: 20px 0px 15px;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.box:hover{
+    box-shadow: 0px 0px 50px rgb(222, 126, 229);
+    animation: glow 1.5s infinite alternate;
+    transform: scale(1.01);
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 30px rgb(222, 126, 229);
+    }
+    100% {
+        box-shadow: 0 0 70px rgb(225, 113, 233);
+    }
+}
+.drill-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 100px;
+}
+.box h2{
+    margin-bottom: 1rem;
+}
+.progress-bar{
+    width: 80%;
+    height: 15px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.progress-bar::after{
+    content: '';
+    display: block;
+    width: 30%; /* Example progress percentage */
+    height: 100%;
+    background-color: #7071ec;
+    border-radius: 10px;
+}
+.drill-buttons{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.drill-buttons button{
+    width: 30%;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7071ec;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.drill-buttons button:hover{
+    background-color: #5859d6;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+}
+.drill-buttons button:active{
+    background-color: rgb(245, 61, 153);
+}
