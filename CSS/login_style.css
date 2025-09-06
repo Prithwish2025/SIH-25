@@ -2,7 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Mona sans', sans-serif;
 }
 body{
     height: 100vh;
@@ -83,7 +83,6 @@ body{
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .submit button:hover{
-    border: white 2px solid;
     box-shadow: 0 0 15px white;
     transform: scale(1.05);
 }

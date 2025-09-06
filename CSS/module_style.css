@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Mona sans', sans-serif;
+}
+.module-section{
+    width: 100%;
+    background-color: #0a0f4d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box{
+    min-height: 350px;
+    width: 30%;
+    background-color: #151786;
+    padding: 20px 0px 15px;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.box:hover{
+    box-shadow: 0px 0px 50px rgb(222, 126, 229);
+    animation: glow 1.5s infinite alternate;
+    transform: scale(1.01);
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 30px rgb(222, 126, 229);
+    }
+    100% {
+        box-shadow: 0 0 70px rgb(225, 113, 233);
+    }
+}
+.module-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 100px;
+}
+.box h2{
+    margin-bottom: 1rem;
+}
+.box video{
+    height: 180px;
+    width: 320px;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+.box a{
+    width: 120px;
+    text-decoration: none;
+    background-color: #7071ec;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;;
+}
+.box a:hover{
+    box-shadow: 0 0 10px white;
+    transform: scale(1.05);
+}
