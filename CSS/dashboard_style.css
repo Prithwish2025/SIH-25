@@ -1,8 +1,8 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: "Mona sans", sans-serif;
     color: white;
-    font-family: 'Mona sans', sans-serif;
 }
 .navbar{
     height: 60px;
@@ -59,24 +59,53 @@
     box-shadow: 0 0 10px white;
     transform: scale(1.05);
 }
-.drills-section{
+.account-details{
+    height: 200px;
+    width: 100%;
+    background-color: #151786;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.profile-img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-left: 50px;
+}
+.user-details{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user-details h2{
+    margin-bottom: 10px;
+}
+.user-details p{
+    margin: 5px 0px;
+    font-weight: bold;
+}
+.performance-metrics{
+    height: 70vh;
     width: 100%;
     background-color: #0a0f4d;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
 }
 .box{
-    min-height: 150px;
+    min-height: 300px;
     width: 30%;
     background-color: #151786;
     padding: 20px 0px 15px;
     margin: 15px 0px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: space-evenly;
     border-radius: 10px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -93,52 +122,31 @@
         box-shadow: 0 0 70px rgb(225, 113, 233);
     }
 }
-.drill-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-left: 100px;
+.box h3{
+    margin-left: 50px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-.box h2{
+.box p{
+    margin-left: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
-.progress-bar{
+.progress{
+    margin-left: 50px;
     width: 80%;
     height: 15px;
     background-color: white;
     border-radius: 10px;
     margin-bottom: 1rem;
 }
-.progress-bar::after{
+.progress::after{
     content: '';
     display: block;
     width: 30%; /* Example progress percentage */
     height: 100%;
     background-color: #7071ec;
     border-radius: 10px;
-}
-.drill-buttons{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-}
-.drill-buttons button{
-    width: 30%;
-    padding: 10px 0px;
-    border: none;
-    border-radius: 5px;
-    background-color: #7071ec;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-.drill-buttons button:hover{
-    background-color: #5859d6;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px white;
-}
-.drill-buttons button:active{
-    background-color: rgb(245, 61, 153);
 }
