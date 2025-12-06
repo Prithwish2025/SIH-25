@@ -10,8 +10,6 @@
 https://prithwish2025.github.io/SIH-25
 ```
 
-> 💡 Replace `your-username` with your GitHub username after deployment
-
 ---
 
 ## 📋 Table of Contents
@@ -202,7 +200,6 @@ Project_SIH'25_Frontend/
 
 **Code Standards**
 ```css
-/* Modular architecture approach */
 - Page-specific CSS modules
 - Reusable component classes
 - Standard responsive breakpoints
