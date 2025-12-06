@@ -4,10 +4,10 @@
 
 ## 🔗 Live Demo
 
-**[View Live Demo →](https://your-username.github.io/Project_SIH25_Frontend/HTML/Index.html)**
+**[View Live Demo →](https://prithwish2025.github.io/SIH-25)**
 
 ```
-https://your-username.github.io/Project_SIH25_Frontend/HTML/Index.html
+https://prithwish2025.github.io/SIH-25
 ```
 
 > 💡 Replace `your-username` with your GitHub username after deployment
